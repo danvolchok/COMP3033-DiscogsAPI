@@ -20,6 +20,7 @@
     "nodemon": "^3.0.2",
     "passport": "^0.7.0",
     "passport-http": "^0.3.0",
+    "spotify-node-wrapper": "^2.0.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0",
     "yamljs": "^0.3.0"
