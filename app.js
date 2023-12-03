@@ -97,7 +97,18 @@ var options = {
                           type: 'string',
                           description: 'Artist of the track'
                         },
-                        // Add other track properties as needed
+                        album: {
+                          type: 'string',
+                          description: 'Album of the track'
+                        },
+                        year: {
+                          type: 'string',
+                          description: 'Release year of the track'
+                        },
+                        genre: {
+                          type: 'string',
+                          description: 'Genre of the track'
+                        },
                       }
                     }
                   }
