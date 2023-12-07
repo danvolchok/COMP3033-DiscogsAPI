@@ -35,7 +35,7 @@ var options = {
     },
     servers: [
       {
-        url: "http://localhost:3000/api",
+        url: "https://discogsapi.onrender.com/",
       },
     ],
     components: {
