@@ -34,15 +34,7 @@ router.post("/", async (req, res, next) => {
 });
 
 // GET
-/**
- * @openapi
- * /projects:
- *  get:
- *    description: List all projects
- *    responses:
- *      200:
- *        description: Returns a list of projects
- */
+
 
 router.get("/", async (req, res, next) => {
     // pagination
@@ -76,6 +68,20 @@ router.get("/", async (req, res, next) => {
     .limit(pageSize);
   res.status(200).json(tracks);
 })
+
+// GET by id
+router.get('/:_id', async (req, res, next) => {
+    try {
+      const track = await Track.findById(req.params._id);
+      if (!track) {
+        return res.status(404).send({ message: 'Track not found' });
+      }
+      res.json(track);
+    } catch (error) {
+      res.status(500).send({ message: error.message });
+    }
+  });
+  
 
 // PUT
 
